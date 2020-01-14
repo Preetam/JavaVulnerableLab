@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        SHIFTLEFT_ORG: "${ORG}"
+        SHIFTLEFT_ORG_ID: "${ORG}"
         SHIFTLEFT_ACCESS_TOKEN: "${TOKEN}"
     ports:
       - 8080:8080
