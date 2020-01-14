@@ -5,9 +5,15 @@
 * Docker Compose - https://docs.docker.com/compose/install/
 * ShiftLeft org ID and token
 
-### Getting started
+### Build Docker image
 
-Build and start the environment.
+```
+docker build --build-arg SHIFTLEFT_ORG_ID=$SHIFTLEFT_ORG_ID --build-arg SHIFTLEFT_ACCESS_TOKEN=$SHIFTLEFT_ACCESS_TOKEN .
+```
+
+### Start JVL with Docker Compose
+
+Build and start the environment using ShiftLeft credentials.
 
 ```
 ORG="" TOKEN="" docker-compose up --build
